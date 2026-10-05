@@ -1,0 +1,15 @@
+ @import './base.css';
+
+@import "tailwindcss";
+
+/* Tambahkan reset global ini di bawahnya untuk memastikan layar mentok kanan-kiri */
+@layer base {
+  html, body, #app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Mencegah scrollbar horizontal muncul */
+  }
+}
